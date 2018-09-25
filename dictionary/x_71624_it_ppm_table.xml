@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=true" extends="task" label="IT PPM " max_length="40" name="x_71624_it_ppm_table" type="collection"/>
+    <element attributes="live_feed=true" extends="task" label="IT PPM " max_length="40" name="x_71624_it_ppm_table" type="collection">
+        <element label="Project Lead" max_length="32" name="u_project_lead" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Project Name" max_length="40" name="u_project_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element label="Green" sequence="0" value="Green"/>
+                <element label="Yellow" sequence="1" value="Yellow"/>
+                <element label="Red" sequence="2" value="Red"/>
+            </choice>
+        </element>
+    </element>
 </database>
