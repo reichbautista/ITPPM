@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_71624_it_ppm_table" label="Project Phase" max_length="40" name="x_71624_it_ppm_project_phase" type="collection"/>
+</database>
